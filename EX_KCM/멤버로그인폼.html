@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼 만들기</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        ul {list-style: none;}
+        body {font-family: "맑은 고딕", "돋움";
+                font-size: 12px; color: #444444;}
+        #login_box { border: 1px solid #bbbbbb;
+                    width: 230px; height: 130px;
+                    border-radius: 15px; margin: 10px 0 0 10px;
+                    padding: 10px 0 0 10px;}
+        h2 { font-family: "Arial"; margin-bottom: 15px;}
+        
+        #login_box input {width: 100px; height: 10px;}
+        
+        #id_pass, #login_btn {      /* 동시선택 (선택자)*/
+            display: inline-block; vertical-align: top;}
+        #id_pass span {     /* 후순위 선택자 */
+            display : inline-block; width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div id="login_box">
+        <h2>Member Login </h2>
+        <ul id= "input_button">
+            <li id = "id_pass">
+                <ul>
+                    <li id="id"><!-- ID 시작 -->
+                        <span>ID</span>
+                        <input type="text">
+                    </li> <!-- ID 완료 -->
+                    <li><!-- Pass 시작 -->
+                        <span>Pass</span>
+                        <input type="text">
+                    </li> <!-- Pass 완료 -->
+                </ul>
+            </li>
+            <li id = "login_btn">
+             <input type="button" value="로그인" style="width:60px;height: 50px;"/>
+          
+            </li>
+        </ul><!-- 로그인 / 로그인 버튼 끝 -->
+    </style>
+        <ul id="btns"> <br>
+            <li><u>회원가입&nbsp;&nbsp;아이디/비밀번호 찾기</u></li>
+        </ul>
+    </div><!-- 로그인 박스 완료-->
+
+    </form>
+    
+</body>
+</html>
